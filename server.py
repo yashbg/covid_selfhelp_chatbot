@@ -4,7 +4,7 @@ bot = telegram_chatbot('config.cfg')
 
 def make_reply(msg):
     if msg is not None:
-        reply = 'Okay'
+        reply = 'Hello. I am the COVID Self Help Chatbot. '
     return reply
 
 update_id = None
