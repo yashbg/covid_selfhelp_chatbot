@@ -9,7 +9,6 @@ def make_reply(msg):
 
 update_id = None
 while True:
-    print('...')
     updates = bot.get_updates(offset=update_id)
     updates = updates['result']
     if updates:
