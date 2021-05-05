@@ -1,4 +1,5 @@
 import requests
+import json
 import configparser as cfg
 
 class telegram_chatbot():
@@ -16,9 +17,10 @@ class telegram_chatbot():
     
     def send_message(self, msg, chat_id):
         url = self.base + 'sendMessage'
-        params = {'chat_id' : chat_id, 'text' : msg}
+        inline_keyboard = json.dumps({'inline_keyboard' : [[{'text' : "Here's how the Inline Keyboard works", 'url' : 'https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating'}]]})
+        params = {'chat_id' : chat_id, 'text' : msg, 'reply_markup' : inline_keyboard}
         if msg is not None:
-            r = requests.get(url, params=params)
+            requests.post(url, data=params)
     
     def read_token_from_config_file(self, config):
         parser = cfg.ConfigParser()
