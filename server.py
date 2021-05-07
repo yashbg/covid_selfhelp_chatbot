@@ -4,13 +4,12 @@ bot = telegram_chatbot('config.cfg')
 
 def answer_query(data, chat_id, callback_id):
     bot.answer_callback_query(callback_id)
-    if data == 'clicked':
-        reply = 'You clicked. '
-        bot.send_message(reply, chat_id)
+    reply = 'You selected ' + data + '. '
+    bot.send_message(reply, chat_id)
 
 def make_reply(msg):
     if msg is not None:
-        reply = 'Hello. I am the COVID Self Help Chatbot. '
+        reply = 'Hello. I am the COVID Self Help Chatbot. \nPlease select a number: '
     return reply
 
 update_id = None
