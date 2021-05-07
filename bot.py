@@ -12,15 +12,26 @@ class telegram_chatbot():
         params = {'timeout' : 100}
         if offset:
             params['offset'] = offset + 1
-        r = requests.get(url, params=params)
+        r = requests.get(url, params)
         return r.json()
+
+    def send_message_inline(self, msg, chat_id):
+        url = self.base + 'sendMessage'
+        inline_keyboard = json.dumps({'inline_keyboard' : [[{'text' : 'Click here', 'callback_data' : 'clicked'}]]})
+        params = {'chat_id' : chat_id, 'text' : msg, 'reply_markup' : inline_keyboard}
+        if msg is not None:
+            requests.post(url, params)
     
     def send_message(self, msg, chat_id):
         url = self.base + 'sendMessage'
-        inline_keyboard = json.dumps({'inline_keyboard' : [[{'text' : "Here's how the Inline Keyboard works", 'url' : 'https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating'}]]})
-        params = {'chat_id' : chat_id, 'text' : msg, 'reply_markup' : inline_keyboard}
+        params = {'chat_id' : chat_id, 'text' : msg}
         if msg is not None:
-            requests.post(url, data=params)
+            requests.post(url, params)
+
+    def answer_callback_query(self, callback_id):
+        url = self.base + 'answerCallbackQuery'
+        params = {'callback_query_id' : callback_id}
+        requests.post(url, params)
     
     def read_token_from_config_file(self, config):
         parser = cfg.ConfigParser()
