@@ -1,17 +1,39 @@
 from bot import telegram_chatbot
+import pandas as pd
 
 bot = telegram_chatbot('config.cfg')
 
-def answer_query(data, chat_id, callback_id):
+def getInfo(reqmnt, state, city):
+    df = pd.DataFrame([
+        [reqmnt, state, city],
+        [reqmnt, state, city],
+    ])
+    return df
+
+def answer_query(response_type, reqmnt, state, city, state_list, city_list, chat_id, callback_id):
     bot.answer_callback_query(callback_id)
-    reply = 'You selected ' + data + '. '
-    bot.send_message(reply, chat_id)
+    if response_type == 'reqmnt':
+        reply = f"Please select the state in which you want {reqmnt}:"
+        bot.send_message_inline(reply, 'state', state_list, chat_id)
+    elif response_type == 'state':
+        reply = f"Please select the city in {state} where you want {reqmnt}: "
+        bot.send_message_inline(reply, 'city', city_list, chat_id)
+    elif response_type == 'city':
+        info = getInfo(reqmnt, state, city)
+        reply = f"Requirement: {info[0][0]}\nState: {info[1][0]}\nCity: {info[2][0]}"
+        bot.send_message(reply, chat_id)
 
 def make_reply(msg):
     if msg is not None:
-        reply = 'Hello. I am the COVID Self Help Chatbot. \nPlease select a number: '
+        reply = 'Hello. I am the COVID Self Help Chatbot. \nPlease select a requirement: '
     return reply
 
+reqmnt_list = ['Plasma', 'Oxygen']
+state_list = ['Assam', 'Delhi NCR']
+city_list = ['Guwahati', 'Gurugram']
+reqmnt = None
+state = None
+city = None
 update_id = None
 while True:
     updates = bot.get_updates(offset=update_id)
@@ -23,11 +45,17 @@ while True:
                 item = item['callback_query']
                 callback_id = item['id']
                 from_ = item['from']['id']
-                data = item['data']
-                answer_query(data, from_, callback_id)
+                data = item['data'].split(':')
+                if data[0] == 'reqmnt':
+                    reqmnt = data[1]
+                elif data[0] == 'state':
+                    state = data[1]
+                elif data[0] == 'city':
+                    city = data[1]
+                answer_query(data[0], reqmnt, state, city, state_list, city_list, from_, callback_id)
             elif 'message' in item:
                 item = item['message']
                 from_ = item['from']['id']
                 message = item['text']
                 reply = make_reply(message)
-                bot.send_message_inline(reply, from_)
+                bot.send_message_inline(reply, 'reqmnt', reqmnt_list, from_)
