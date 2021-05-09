@@ -1,16 +1,10 @@
 from bot import telegram_chatbot
+from extract_data import *
 import pandas as pd
 
 bot = telegram_chatbot('config.cfg')
 
-def getInfo(reqmnt, state, city):
-    df = pd.DataFrame([
-        [reqmnt, state, city],
-        [reqmnt, state, city],
-    ])
-    return df
-
-def intro():
+def make_intro():
     reply = 'Hello. I am the COVID Self Help Chatbot.'
     return reply
 
@@ -28,11 +22,11 @@ def answer_query(response_type, reqmnt, state, city, state_list, city_list, chat
         reply = f"Please select the city in {state} where you want {reqmnt}:"
         bot.edit_message(reply, 'city', city_list, chat_id, message_id)
     elif response_type == 'city':
-        info = getInfo(reqmnt, state, city)
+        info = query(reqmnt, state, city)
         reply = f"Requirement: {info[0][0]}\nState: {info[1][0]}\nCity: {info[2][0]}"
         bot.send_message(reply, chat_id)
 
-reqmnt_list = ['Plasma', 'Oxygen']
+reqmnt_list = get_reqmnt_list()
 state_list = ['Assam', 'Delhi NCR']
 city_list = ['Guwahati', 'Gurugram']
 reqmnt = None
@@ -53,8 +47,10 @@ while True:
                 data = item['data'].split(':')
                 if data[0] == 'reqmnt':
                     reqmnt = data[1]
+                    state_list = get_state_list(reqmnt)
                 elif data[0] == 'state':
                     state = data[1]
+                    city_list = get_city_list(reqmnt, state)
                 elif data[0] == 'city':
                     city = data[1]
                 answer_query(data[0], reqmnt, state, city, state_list, city_list, from_, message_id, callback_id)
@@ -62,7 +58,7 @@ while True:
                 item = item['message']
                 from_ = item['from']['id']
                 message = item['text']
-                reply = intro()
+                reply = make_intro()
                 bot.send_message(reply, from_)
                 reply = make_reply(message)
                 bot.send_message_inline(reply, 'reqmnt', reqmnt_list, from_)
