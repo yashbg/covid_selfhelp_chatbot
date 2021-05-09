@@ -1,6 +1,5 @@
 from bot import telegram_chatbot
 from extract_data import *
-import pandas as pd
 
 bot = telegram_chatbot('config.cfg')
 
@@ -22,13 +21,18 @@ def answer_query(response_type, reqmnt, state, city, state_list, city_list, chat
         reply = f"Please select the city in {state} where you want {reqmnt}:"
         bot.edit_message(reply, 'city', city_list, chat_id, message_id)
     elif response_type == 'city':
-        info = query(reqmnt, state, city)
-        reply = f"Requirement: {info[0][0]}\nState: {info[1][0]}\nCity: {info[2][0]}"
+        info = get_info(reqmnt, state, city)
+        if reqmnt == 'Oxygen':
+            info = info[['NAME', 'CONTACT NUMBER']].reset_index()
+            reply = f"Name: {info['NAME'][0]}\nContact No.: {info['CONTACT NUMBER'][0]}"
+        elif reqmnt == 'Hospital Beds':
+            info = info[['Name of Hospital', 'Phone Number']].reset_index()
+            reply = f"Name: {info['Name of Hospital'][0]}\nContact No.: {info['Phone Number'][0]}"
         bot.send_message(reply, chat_id)
 
 reqmnt_list = get_reqmnt_list()
-state_list = ['Assam', 'Delhi NCR']
-city_list = ['Guwahati', 'Gurugram']
+state_list = []
+city_list = []
 reqmnt = None
 state = None
 city = None
