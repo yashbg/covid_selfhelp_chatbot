@@ -2,6 +2,10 @@ import requests
 import json
 import configparser as cfg
 
+def trim(str):
+    str = (str[:50] + '..') if len(str) > 50 else str
+    return str
+
 class telegram_chatbot():
     def __init__(self, config):
         self.token = self.read_token_from_config_file(config)
@@ -24,7 +28,7 @@ class telegram_chatbot():
     def send_message_inline(self, msg, option_type, option_list, chat_id):
         url = self.base + 'sendMessage'
         inline_keyboard = json.dumps({'inline_keyboard': [
-            [{'text': option, 'callback_data': f'{option_type}:{option}'}] for option in option_list
+            [{'text': trim(option), 'callback_data': f'{option_type}:{trim(option)}'}] for option in option_list
         ]})
         params = {'chat_id': chat_id, 'text': msg, 'reply_markup': inline_keyboard}
         if msg is not None:
