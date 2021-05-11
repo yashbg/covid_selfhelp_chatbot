@@ -34,7 +34,7 @@ def answer_query(data, reqmnt_list, state_list, city_list, chat_id, message_id, 
         if data[1] == 'Oxygen':
             info = info[['NAME', 'CONTACT NUMBER']].reset_index()
             if counter < info.shape[0]:
-                reply = f"Name: {info['NAME'][counter]}\nContact No.: {info['CONTACT NUMBER'][counter]}"
+                reply = f"{data[1]} in {data[3]}:\nName: {info['NAME'][counter]}\nContact No.: {info['CONTACT NUMBER'][counter]}"
             else:
                 reply = make_err()
                 bot.send_message(reply, chat_id)
@@ -42,7 +42,7 @@ def answer_query(data, reqmnt_list, state_list, city_list, chat_id, message_id, 
         elif data[1] == 'Hospital Beds':
             info = info[['Name of Hospital', 'Phone Number']].reset_index()
             if counter < info.shape[0]:
-                reply = f"Name: {info['Name of Hospital'][counter]}\nContact No.: {info['Phone Number'][counter]}"
+                reply = f"{data[1]} in {data[3]}:\nName: {info['Name of Hospital'][counter]}\nContact No.: {info['Phone Number'][counter]}"
             else:
                 reply = make_err()
                 bot.send_message(reply, chat_id)
