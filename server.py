@@ -12,20 +12,23 @@ def make_reply(msg):
         reply = 'Please select a requirement:'
     return reply
 
-def answer_query(response_type, reqmnt, state, city, state_list, city_list, chat_id, message_id, callback_id):
+def answer_query(data, reqmnt_list, state_list, city_list, chat_id, message_id, callback_id):
     bot.answer_callback_query(callback_id)
-    if response_type == 'reqmnt':
-        reply = f"Please select the state in which you want {reqmnt}:"
-        bot.edit_message(reply, 'state', state_list, chat_id, message_id)
-    elif response_type == 'state':
-        reply = f"Please select the city in {state} where you want {reqmnt}:"
-        bot.edit_message(reply, 'city', city_list, chat_id, message_id)
-    elif response_type == 'city':
-        info = get_info(reqmnt, state, city)
-        if reqmnt == 'Oxygen':
+    if data[0] == 'None':
+        reply = 'Please select a requirement:'
+        bot.edit_message(reply, 'reqmnt', reqmnt_list, chat_id, message_id)
+    elif data[0] == 'reqmnt':
+        reply = f"Please select the state in which you want {data[1]}:"
+        bot.edit_message(reply, 'state', state_list, chat_id, message_id, data[1])
+    elif data[0] == 'state':
+        reply = f"Please select the city in {data[2]} where you want {data[1]}:"
+        bot.edit_message(reply, 'city', city_list, chat_id, message_id, data[1], data[2])
+    elif data[0] == 'city':
+        info = get_info(data[1], data[2], data[3])
+        if data[1] == 'Oxygen':
             info = info[['NAME', 'CONTACT NUMBER']].reset_index()
             reply = f"Name: {info['NAME'][0]}\nContact No.: {info['CONTACT NUMBER'][0]}"
-        elif reqmnt == 'Hospital Beds':
+        elif data[1] == 'Hospital Beds':
             info = info[['Name of Hospital', 'Phone Number']].reset_index()
             reply = f"Name: {info['Name of Hospital'][0]}\nContact No.: {info['Phone Number'][0]}"
         bot.send_message(reply, chat_id)
@@ -33,9 +36,6 @@ def answer_query(response_type, reqmnt, state, city, state_list, city_list, chat
 reqmnt_list = get_reqmnt_list()
 state_list = []
 city_list = []
-reqmnt = None
-state = None
-city = None
 update_id = None
 while True:
     updates = bot.get_updates(offset=update_id)
@@ -50,14 +50,10 @@ while True:
                 message_id = item['message']['message_id']
                 data = item['data'].split(':')
                 if data[0] == 'reqmnt':
-                    reqmnt = data[1]
-                    state_list = get_state_list(reqmnt)
+                    state_list = get_state_list(data[1])
                 elif data[0] == 'state':
-                    state = data[1]
-                    city_list = get_city_list(reqmnt, state)
-                elif data[0] == 'city':
-                    city = data[1]
-                answer_query(data[0], reqmnt, state, city, state_list, city_list, from_, message_id, callback_id)
+                    city_list = get_city_list(data[1], data[2])
+                answer_query(data, reqmnt_list, state_list, city_list, from_, message_id, callback_id)
             elif 'message' in item:
                 item = item['message']
                 from_ = item['from']['id']
