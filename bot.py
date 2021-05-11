@@ -22,17 +22,24 @@ class telegram_chatbot():
     def send_message(self, msg, chat_id):
         url = self.base + 'sendMessage'
         params = {'chat_id': chat_id, 'text': msg}
-        if msg is not None:
-            requests.post(url, params)
+        requests.post(url, params)
 
     def send_message_inline(self, msg, option_type, option_list, chat_id):
         url = self.base + 'sendMessage'
-        inline_keyboard = json.dumps({'inline_keyboard': [
+        inline_keyboard = {'inline_keyboard': [
             [{'text': trim(option), 'callback_data': f'{option_type}:{trim(option)}'}] for option in option_list
-        ]})
-        params = {'chat_id': chat_id, 'text': msg, 'reply_markup': inline_keyboard}
-        if msg is not None:
-            requests.post(url, params)
+        ]}
+        params = {'chat_id': chat_id, 'text': msg, 'reply_markup': json.dumps(inline_keyboard)}
+        requests.post(url, params)
+    
+    def send_info(self, msg, data, counter, chat_id):
+        url = self.base + 'sendMessage'
+        # data -> option_type:reqmnt:state:city:counter
+        inline_keyboard = {'inline_keyboard': [
+            [{'text': 'Show more', 'callback_data': f'end:{data[1]}:{data[2]}:{data[3]}:{counter + 1}'}]
+        ]}
+        params = {'chat_id': chat_id, 'text': msg, 'reply_markup': json.dumps(inline_keyboard)}
+        requests.post(url, params)
 
     def edit_message(self, msg, option_type, option_list, chat_id, message_id, reqmnt=None, state=None):
         url = self.base + 'editMessageText'
@@ -45,8 +52,8 @@ class telegram_chatbot():
                 [{'text': option, 'callback_data': f'{option_type}:{reqmnt}:{option}:None'}] for option in option_list
             ]}
             inline_keyboard['inline_keyboard'].append([
-                {'text': 'Back', 'callback_data': f'None:None:None:None'},
-                {'text': 'Start Over', 'callback_data': f'None:None:None:None'},
+                {'text': 'Back', 'callback_data': f'start:None:None:None'},
+                {'text': 'Start Over', 'callback_data': f'start:None:None:None'},
             ])
         elif option_type == 'city':
             inline_keyboard = {'inline_keyboard': [
@@ -54,11 +61,10 @@ class telegram_chatbot():
             ]}
             inline_keyboard['inline_keyboard'].append([
                 {'text': 'Back', 'callback_data': f'reqmnt:{reqmnt}:None:None'},
-                {'text': 'Start Over', 'callback_data': f'None:None:None:None'},
+                {'text': 'Start Over', 'callback_data': f'start:None:None:None'},
             ])
         params = {'chat_id': chat_id, 'message_id': message_id, 'text': msg, 'reply_markup': json.dumps(inline_keyboard)}
-        r = requests.post(url, params)
-        return r.json()
+        requests.post(url, params)
 
     def answer_callback_query(self, callback_id):
         url = self.base + 'answerCallbackQuery'
