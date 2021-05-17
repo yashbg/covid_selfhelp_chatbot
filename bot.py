@@ -27,7 +27,7 @@ class telegram_chatbot():
     def send_message_inline(self, msg, option_type, option_list, chat_id):
         url = self.base + 'sendMessage'
         inline_keyboard = {'inline_keyboard': [
-            [{'text': trim(option), 'callback_data': f'{option_type}:{trim(option)}'}] for option in option_list
+            [{'text': trim(str(option)), 'callback_data': f'{option_type}:{option}'}] for option in option_list
         ]}
         params = {'chat_id': chat_id, 'text': msg, 'reply_markup': json.dumps(inline_keyboard)}
         requests.post(url, params)
@@ -57,11 +57,11 @@ class telegram_chatbot():
         url = self.base + 'editMessageText'
         if option_type == 'reqmnt':
             inline_keyboard = {'inline_keyboard': [
-                [{'text': trim(option), 'callback_data': f'{option_type}:{option}:None:None'}] for option in option_list
+                [{'text': trim(str(option)), 'callback_data': f'{option_type}:{option}:None:None'}] for option in option_list
             ]}
         elif option_type == 'plasma_type':
             inline_keyboard = {'inline_keyboard': [
-                [{'text': trim(option), 'callback_data': f'{option_type}:{reqmnt}:{option}'}] for option in option_list
+                [{'text': trim(str(option)), 'callback_data': f'{option_type}:{reqmnt}:{option}'}] for option in option_list
             ]}
             inline_keyboard['inline_keyboard'].append([
                 {'text': 'Back', 'callback_data': f'start'},
@@ -69,7 +69,7 @@ class telegram_chatbot():
             ])
         elif option_type == 'state':
             inline_keyboard = {'inline_keyboard': [
-                [{'text': trim(option), 'callback_data': f'{option_type}:{reqmnt}:{option}:None'}] for option in option_list
+                [{'text': trim(str(option)), 'callback_data': f'{option_type}:{reqmnt}:{option}:None'}] for option in option_list
             ]}
             inline_keyboard['inline_keyboard'].append([
                 {'text': 'Back', 'callback_data': f'start:None:None:None'},
@@ -78,7 +78,7 @@ class telegram_chatbot():
         elif option_type == 'city':
             if reqmnt == 'Plasma':
                 inline_keyboard = {'inline_keyboard': [
-                    [{'text': trim(option), 'callback_data': f'{option_type}:{reqmnt}:{plasma_type}:{option}'}] for option in option_list
+                    [{'text': trim(str(option)), 'callback_data': f'{option_type}:{reqmnt}:{plasma_type}:{option}'}] for option in option_list
                 ]}
                 inline_keyboard['inline_keyboard'].append([
                     {'text': 'Back', 'callback_data': f'reqmnt:{reqmnt}'},
@@ -86,7 +86,7 @@ class telegram_chatbot():
                 ])
             else:
                 inline_keyboard = {'inline_keyboard': [
-                    [{'text': trim(option), 'callback_data': f'{option_type}:{reqmnt}:{state}:{option}'}] for option in option_list
+                    [{'text': trim(str(option)), 'callback_data': f'{option_type}:{reqmnt}:{state}:{option}'}] for option in option_list
                 ]}
                 inline_keyboard['inline_keyboard'].append([
                     {'text': 'Back', 'callback_data': f'reqmnt:{reqmnt}:None:None'},
@@ -94,7 +94,7 @@ class telegram_chatbot():
                 ])
         elif option_type == 'plasma_donor_bloodgrp':
             inline_keyboard = {'inline_keyboard': [
-                [{'text': trim(option), 'callback_data': f'{option_type}:{reqmnt}:{plasma_type}:{city}:{option}'}] for option in option_list
+                [{'text': trim(str(option)), 'callback_data': f'{option_type}:{reqmnt}:{plasma_type}:{city}:{option}'}] for option in option_list
             ]}
             inline_keyboard['inline_keyboard'].append([
                 {'text': 'Back', 'callback_data': f'plasma_type:{reqmnt}:{plasma_type}'},

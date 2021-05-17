@@ -1,0 +1,91 @@
+Name of Hospital,Phone Number,State,City,Status,Time of Verification (hh:mm AM/PM),Special Notes,Number of Beds with Ventilator,Beds with oxygen,
+Sanjeevni Vyas Hospital,9001090888,Rajasthan,Jhalawar,Beds Available,17/05 08:28 pm,"4 oxygen beds, 6 general beds patients above 80 oxy",,,1
+Sparsh Hospital,9166333209,Rajasthan,Sanganer,Beds Available,17/05 08:28 pm,4 normal beds ,,,1
+"Amar Hospital , Fatehpur",9413344297,Rajasthan,Fatehpur,Beds Available,17/05 08:28 pm,"ICU (05)
+Oxygen beds (10)
+Normal beds (20) O2 above 80",,,1
+The Ambassador Hotel Model colony run by senior doctors (JITO),"8087140887, 9823288800",Maharashtra,Pune,Beds Available,17/05 08:29 pm,No ICU. O2 + General - 10-15. O2 should be above 88.,,,1
+Rainbow Hospital,9511223623,Maharashtra,Pune,Beds Available,17/05 08:29 pm,10 oxygen beds for covid patient ,,,1
+Kaya Hospital ,8770370287,Madhya Pradesh,Gwalior,Beds Available,17/05 08:31 pm,"ICU (13)
+Oxygen beds (12)
+Normal beds (25)
+Sp02 85.",,12,1
+Gian Sagar Medical College and Hospital,"6284177567, 01762 520 000, 9910223322, 9582041424",Punjab,Patiala,Beds Available,17/05 08:47 pm,"Asked to call 8699646607, Oxygen beds (150)
+Sp02 80+",,,1
+Savitri Hospital ,9818709813,Delhi,Delhi,Beds Available,17/05 08:32 pm,"Oxygen beds (02)
+Normal beds (02)",,,1
+Maharaja Agrasen,"9910489495
+8130402916 9474299271, 9958602884, 01140777666",Delhi,City Westend,Beds Available,17/05 08:33 pm,"No ICU.Oxygen beds (5-6), O2/General-50; O2 should be above 90.",,2-3,1
+Ambedkar Nagar Hospital,"01126052016, 9310586617  ",Delhi,Delhi,Beds Available,17/05 08:35 pm,Oxygen beds (200-250) but oxygen saturation should be 85+,,7-8,1
+Indian Spinal Injuries,011-42255384,Delhi,Vasant Kunj,Beds Available,17/05 08:36 pm,"No ICU. Gave info through portal which updated at 8:13pm
+Oxygen beds (33)",,,1
+ESIC Okhla,"011-26814161, (1800-11-3839)",Delhi,Okhla,Beds Available,17/05 08:38 pm,"Oxygen beds (80)
+Spo2 85+",,,1
+Batra Hospital,"8860743272, 011-29903027, 01129958747, 01129903001, 
+01129902001, 01129051280, 29903001 (emergency number given by anattendent)",Delhi,Delhi,Beds Available,17/05 08:44 pm,No ICU. 80+O2 beds. Admittance will depend on the doctor.,,,1
+"Deep Chand Bandhu
+
+","011-27305952, 8929121749, 7290025141",Delhi,Delhi,Beds Available,17/05 07:50 pm,oxy beds available,,97,1
+Swami Dayanand,"9971443252, 011-22581031, 011-22581036, 0112110065",Delhi,Delhi,Beds Available,17/05 08:28 pm,18 normal beds,,,1
+Rajeev Gandhi Super Speciality Hospital,"01122890773, 01122890789, 01122890611, 8595524745",Delhi,Delhi,Beds Available,17/05 08:28 pm,"oxygen beds available, check on app",,,1
+Sanjay Gandhi Memorial Hospital,"011 - 27781047, 01127913220",Delhi,Delhi,Beds Available,17/05 09:08 pm,O2 beds.Need patient details ,,15,1
+Covid Care center CWG Village,9310080537,Delhi,Delhi,Beds Available,17/05 08:52 pm,"100 O2 beds, 150 non-O2. Oxygen level should be 85 and above without support.",,100,1
+DDU,011-25401075,Delhi,Delhi,Beds Available,17/05 08:54 pm,100 beds with oxygen. ICU 20.,20,100,1
+SMS Hospital,080769 56969,Delhi,Delhi,Beds Available,17/05 07:35 pm,oxy beds and icus,,,1
+Jeewan Nursing Home,011 4243 0246,Delhi,Delhi,Beds Available,17/05 07:35 pm,Asked to check government portal.,,,1
+Bensups Hospital,011 4555 0000,Delhi,Delhi,Beds Available,17/05 07:35 pm,"2 icu, 8 isolation beds",,3,1
+Park Hospital,"011 4532 3232, 9315098446, 9899241482",Delhi,Delhi,Beds Available,17/05 07:55 pm,2-3 icu beds,,,1
+Lalitha Hospital,8076868086,Delhi,Begampur,Beds Available,17/05 07:56 pm,oxy beds and icus,2,10,1
+Dr Upendr Madhav Hospital,9650800229,Haryana,Faridabad,Beds Available,17/05 07:56 pm,10 ICU and 10 O2. No ventilator.,,5,1
+"Jai Shri Ram Hospital, Gurgaon
+",9868416932,Haryana,Gurugram,Beds Available,17/05 07:56 pm,10 oxy beds,,,1
+RIMS Bariatu,8986684439,Jharkhand,Ranchi,Beds Available,17/05 07:57 pm,"200 oxygen beds, 20 ICU with ventilator, Will accept patients with O2 below 80.",5,200+,1
+S R Memorial Hospital,6263919436,Madhya Pradesh,Gwalior,Beds Available,17/05 07:57 pm,"20 normal beds, 10 icus",,8,1
+Samyak Hospital,9329399456,Madhya Pradesh,Indore,Beds Available,17/05 08:08 pm,oxy beds,,,1
+CKRD Hospital ,9414080740,Rajasthan,Jhunjhunu,Beds Available,17/05 08:08 pm,"short supply of oxygen, ICU/ventilator beds available without oxygen support , 97850 21709(new no.),see the portal",,,1
+Saroj Hospital Rohini,011-47903333,Delhi,Delhi,Beds Available,17/05 10:02 pm,17 Oxy Beds ,,,1
+VishwarajHospital,020 6760 6060,Maharashtra,Pune,Beds Available,17/05 10:03 pm,General Beds Available ,,2-3,1
+DY Patil,7796663366,Maharashtra,Pimpri-Chinchwad,Beds Available,17/05 10:04 pm,Oxygen & General Beds ,,10,1
+"Anjuman Islamia Hospital, Prakash Kumar",8102352443,Jharkhand,Ranchi,Beds Available,17/05 10:05 pm,"3 ICU Beds, 6 Oxy & General Beds ",,,1
+"Summer Hospital, POC Surender Oraon","7903432581, 8084490383",Jharkhand,Ranchi,Beds Available,17/05 07:10 pm,oxy beds,,,1
+AnandLok Hospital,0731-4078485,Madhya Pradesh,Indore,Beds Available,17/05 06:51 pm,2 general beds,,,1
+Kaya Hospital,8770370287,Madhya Pradesh,Gwalior,Beds Available,17/05 06:50 pm,"10 oxy, 10 icus",,,1
+Mandala Hospital,9172815943,Maharashtra,Andheri,Beds Available,17/05 06:50 pm,"8 isolation beds, 4 oxy, 4 icu",,,1
+AnandLok Hospital,033 23592932/ +91-9830321714,West Bengal,Kolkata,Beds Available,17/05 01:33 pm,1 ICU bed call 9830788759,,,1
+Jay Hospital,9810848449; 9560432605,Delhi,Delhi,Beds Available,17/05 09:34 pm,"2 oxy beds, no icu beds, no general beds, no ventilator beds,, oxy 75+",,,1
+Brahmand Hospital,9167105009,Maharashtra,Thane,Beds Available,17/05 09:57 pm,normal beds without oxygen ,,,1
+Atal Memorial,0-7552446139,Madhya Pradesh,Bhopal,Beds Available,17/05 09:56 pm,oxygen + ICU available ,,,1
+Pushpawati Hospital,9717159780,Delhi,Delhi,Beds Available,17/05 09:52 pm,"no ICU, some oxygen/ normal beds with oxy but depends on patients condition",,,1
+SGT Hospital,"18001025661, 9311762964",Haryana,Gurugram,Beds Available,17/05 09:49 pm,"ICU, oxygen beds available ",,,1
+Vardaan Hospital and Trauma centre,8199984102,Haryana,Gurugram,Beds Available,17/05 09:46 pm,"Oxygen, ICU beds but depends on patients condition 9671415837(Dr.Praveen) call this doctor and he will guide abour it ",,,1
+Mansaram Hospital,8285853737,Delhi,Nangloi,Beds Available,17/05 09:43 pm,"1 ICU bED, 29 Oxygen beds, takes only patients with oxygen level above 80",,,1
+"Rathi Hospital, Najafgarh","9599198053, 09871173355",Delhi,Delhi,Beds Available,17/05 09:41 pm,oxygen beds available but didnt specify the number ,,15,1
+Konark Hospital,9625695449,Delhi,Nangloi,Beds Available,17/05 10:07 pm,26 Oxy Beds,,,1
+Sapphire Hospital,022 25333222,Maharashtra,Mumbai,Beds Available,17/05 10:08 pm,"60 normal beds, 10 ICU beds with oxyegn , patients with oxy levels 80 above",,,1
+" Bhagat Chandra hospital, mahavir enclave.","1145254525,  9354697563  8395994074  7827473433  01145254550", close to Dwarka,Delhi,Beds Available,17/05 10:08 pm,4 Oxy beds ,,,1
+Sant Nirankari Covid Care ,91-1147660200,Delhi,Delhi,Beds Available,17/05 10:11 pm,400+ Oxy Beds ,,,1
+Sunrise Hospital ,0-1148820000,Delhi,Delhi,Beds Available,17/05 10:12 pm,oxygen beds only,,,1
+Shakuntala nursing home,"9211783762, 9211783761",Delhi,Delhi,Beds Available,17/05 10:14 pm,10+ Oxy Beds ,,,1
+Kalindi hospital (Mr Satish),7895151380,Delhi,Jasola Vihar,Beds Available,17/05 10:15 pm,Oxy Beds ,,,1
+HOME iCU,9873642200,Delhi,Delhi,Beds Available,17/05 09:02 pm,Website: https://homecareplus.co.in/ Home ICU set up available - 12k a day,,,1
+Medipulse Hospital ,9001918358,Rajasthan,Jodhpur,Beds Available,17/05 09:03 pm,general beds available,,,1
+Apoorva Hospitals And Diagnostic Centre,"088846 27777, 080-41608135",Bangalore,Karnataka,Beds Available,17/05 09:25 pm,General beds,,,1
+Astra Hospital (ICU yes),"Vishnu 9902229090, Suresh (CEO) 85535 01501
+",Bangalore, Karnataka,Beds Available,17/05 08:39 pm,"No oxygen beds, only non oxygen beds",,,1
+Dr. Vishnuvardhan Road PM Santosha Hospital (ICU Yes),"079966 66888, 07996666889",Bangalore, Karnataka,Beds Available,17/05 08:38 pm," 079966 66889- try this number, They have beds but will depend on patient saturation",,,1
+Prakriya Hospitals A Unit Of C Square Healthcare,"095137 33334, 9606698784",Bangalore,Karnataka,Beds Available,17/05 08:25 pm,few oxygen beds,,5-6,1
+Raksha Multispeciality Hospital,080 2347 1005,Bangalore,Karnataka,Beds Available,17/05 08:25 pm,genereal beds,,,1
+Sanjeevni Hospital,919801110547,Bihar,Patna,Beds Available,17/05 08:06 pm,Oxygen beds only,,,1
+Mann Multi-Speciality Hospital ,"9053025025, 7504512345",Delhi,Rohtak,Beds Available,17/05 08:06 pm,"Oxygen beds and ICU available, no ventilator",,25,1
+Lotus Hospital ,0124-4767676,Delhi,Gurugram,Beds Available,17/05 08:06 pm,"Only normal oxygen beds, NO ICU or Ventilators",,,1
+Medeor Hospital ,"01141222222, 8130390341",Delhi,Qutub Instl. Area,Beds Available,17/05 07:58 pm,oxygen but require patient details ,,,1
+Baddi ,9811955525,Himachal Pradesh,Baddi,Beds Available,17/05 07:56 pm,"10 Oxygen beds, few icu beds",,,1
+Diamond Hospital Malad,"02265188741, 9819023567",Maharashtra,Mumbai,Beds Available,17/05 07:55 pm,OXYGEN FEW BEDDS,,,1
+"Radha Soami Satsang -Beas,
+Bhati Mines,  Chhatarpur,Nr. Sawan public school","011 26654913, 01126655547",Delhi,Qutub Minar Road,Beds Available,17/05 08:34 pm,"Oxygen beds (50+)
+Normal beds (50+) they do accept, 85% oxy level se above hona chaiye",,,4
+Mangala  hospital,9172815943,Maharashtra,Andheri,Beds Available,17/05 08:30 pm,"ICU (04)
+Oxygen beds (08)
+Normal beds (06)",,,5
+MVJ Medical College And Research Hospital,080 2806 0200,Bangalore,Karnataka,Beds Available,17/05 08:14 pm,Only general beds,,,5
+"BLK Hospital, Pusa Road Pvt","9871748578, 8448386700, 9311365796 01130653299, 8130697446, 01130653040",Delhi,Delhi,Beds Available,17/05 08:27 pm,Ph no 011-30653040 is that of pharmacy. Please remove.,,Didnt disclose ,
