@@ -7,8 +7,29 @@ def make_intro():
     reply = 'Hello. I am the COVID Self Help Chatbot.'
     return reply
 
-def make_reply():
-    reply = 'Please select a requirement:'
+def checkna(str):
+    if pd.isna(str):
+        return 'Not available'
+    return str
+
+def make_reply(data=None, info=None, counter=None):
+    if not isinstance(info, pd.DataFrame):
+        reply = 'Please select a requirement:'
+    else:
+        if data[1] == 'Oxygen' or data[1] == 'Hospital Beds':
+            reply = f"{data[1]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
+        elif data[1] == 'Medicines':
+            reply = f"{data[1]} in {data[2]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
+        elif data[1] == 'Plasma' and data[2] == 'Organisations':
+            reply = f"{data[1]} {data[2]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
+        elif data[0] == 'plasma_donor_bloodgrp' or (data[0] == 'end' and data[1] == 'Plasma' and data[2] == 'Donors'):
+            reply = f"{data[4]} {data[1]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
+        if pd.notna(info['status'][counter]):
+            reply += f"\nStatus: {info['status'][counter]}"
+            if info['date_time'][counter]:
+                reply +=f"\nDate/Time of Verification: {info['date_time'][counter]}"
+        if pd.notna(info['info'][counter]):
+            reply += f"\nAdditional Info: {info['info'][counter]}"
     return reply
 
 def make_err():
@@ -53,45 +74,13 @@ def answer_query(data, reqmnt_list, state_list, city_list, plasma_type_list, pla
                 counter = int(data[5])
             else:
                 counter = int(data[4])
-        if data[1] == 'Oxygen':
-            info = info[['NAME', 'CONTACT NUMBER']].reset_index()
-            if counter < info.shape[0]:
-                reply = f"{data[1]} in {data[3]}:\nName: {info['NAME'][counter]}\nContact No.: {info['CONTACT NUMBER'][counter]}"
-            else:
-                reply = make_err()
-                bot.send_message(reply, chat_id)
-                return
-        elif data[1] == 'Hospital Beds':
-            info = info[['Name of Hospital', 'Phone Number']].reset_index()
-            if counter < info.shape[0]:
-                reply = f"{data[1]} in {data[3]}:\nName: {info['Name of Hospital'][counter]}\nContact No.: {info['Phone Number'][counter]}"
-            else:
-                reply = make_err()
-                bot.send_message(reply, chat_id)
-                return
-        elif data[1] == 'Medicines':
-            info = info[['Name', 'Contact']].reset_index()
-            if counter < info.shape[0]:
-                reply = f"{data[1]} in {data[2]}:\nName: {info['Name'][counter]}\nContact No.: {info['Contact'][counter]}"
-            else:
-                reply = make_err()
-                bot.send_message(reply, chat_id)
-        elif data[1] == 'Plasma' and data[2] == 'Organisations':
-            info = info[['NAME', 'CONTACT NUMBER']].reset_index()
-            if counter < info.shape[0]:
-                reply = f"{data[1]} {data[2]} in {data[3]}:\nName: {info['NAME'][counter]}\nContact No.: {info['CONTACT NUMBER'][counter]}"
-            else:
-                reply = make_err()
-                bot.send_message(reply, chat_id)
-                return
-        elif data[0] == 'plasma_donor_bloodgrp' or (data[0] == 'end' and data[1] == 'Plasma' and data[2] == 'Donors'):
-            info = info[['NAME', 'CONTACT NUMBER']].reset_index()
-            if counter < info.shape[0]:
-                reply = f"{data[4]} {data[1]} in {data[3]}:\nName: {info['NAME'][counter]}\nContact No.: {info['CONTACT NUMBER'][counter]}"
-            else:
-                reply = make_err()
-                bot.send_message(reply, chat_id)
-                return
+        info = info.reset_index()
+        if counter < info.shape[0]:
+            reply = make_reply(data, info, counter)
+        else:
+            reply = make_err()
+            bot.send_message(reply, chat_id)
+            return
         bot.send_info(reply, data, counter, chat_id)
 
 reqmnt_list = get_reqmnt_list()

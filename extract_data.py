@@ -24,65 +24,65 @@ def get_plasma_type_list():
 
 def get_state_list(reqmnt):
     if reqmnt == "Oxygen":
-        output = oxygen_df['STATE']
+        output = oxygen_df['state']
         output = output.drop_duplicates()
         return list(output)
     elif reqmnt == "Hospital Beds":
-        output = hospital_bed_df['State']
+        output = hospital_bed_df['state']
         output = output.drop_duplicates()
         return list(output)
     elif reqmnt == 'Medicines':
-        output = medicine_df['State']
+        output = medicine_df['state']
         output = output.drop_duplicates()
         return output
 
 def get_city_list(reqmnt, state):
     if reqmnt == "Oxygen":
-        df = oxygen_df[oxygen_df['STATE'] == state]
-        output = df['LOCATION (CITY)']
+        df = oxygen_df[oxygen_df['state'] == state]
+        output = df['city']
         output = output.drop_duplicates()
         return list(output)
     elif reqmnt == "Hospital Beds":
-        df = hospital_bed_df[hospital_bed_df['State'] == state]
-        output = df['City']
+        df = hospital_bed_df[hospital_bed_df['state'] == state]
+        output = df['city']
         output = output.drop_duplicates()
         return list(output)
 
 def get_plasma_city_list(type):
     if type == "Organisations":
-        output = plasma_org_df['LOCATION']
+        output = plasma_org_df['city']
         output = output.drop_duplicates()
         return output
     else:
-        output = plasma_donor_df['LOCATION']
+        output = plasma_donor_df['city']
         output = output.drop_duplicates()
         return output
 
 def get_plasma_donor_bloodgrp_list(city):
-    df = plasma_donor_df[plasma_donor_df['LOCATION'] == city]
-    output = df['BLOOD GROUP']
+    df = plasma_donor_df[plasma_donor_df['city'] == city]
+    output = df['bloodgrp']
     output = output.drop_duplicates()
     return output
 
 def get_info(reqmnt, state, city):
     if reqmnt == "Oxygen":
-        df1 = oxygen_df[oxygen_df['STATE'] == state]
-        df2 = df1[df1['LOCATION (CITY)'] == city]
+        df1 = oxygen_df[oxygen_df['state'] == state]
+        df2 = df1[df1['city'] == city]
         return df2
     elif reqmnt == "Hospital Beds":
-        df1 = hospital_bed_df[hospital_bed_df['State'] == state]
-        df2 = df1[df1['City'] == city]
+        df1 = hospital_bed_df[hospital_bed_df['state'] == state]
+        df2 = df1[df1['city'] == city]
         return df2
 
 def get_medicine_info(state):
-    df = medicine_df[medicine_df['State'] == state]
+    df = medicine_df[medicine_df['state'] == state]
     return df
 
 def get_plasma_org_info(city):
-    df = plasma_org_df[plasma_org_df['LOCATION'] == city]
+    df = plasma_org_df[plasma_org_df['city'] == city]
     return df
 
 def get_plasma_donor_info(city, bloodgrp):
-    df =plasma_donor_df[plasma_donor_df['LOCATION'] == city]
-    df = df[df['BLOOD GROUP'] == bloodgrp]
+    df =plasma_donor_df[plasma_donor_df['city'] == city]
+    df = df[df['bloodgrp'] == bloodgrp]
     return df

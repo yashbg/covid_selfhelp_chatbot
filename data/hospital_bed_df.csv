@@ -1,91 +1,257 @@
-Name of Hospital,Phone Number,State,City,Status,Time of Verification (hh:mm AM/PM),Special Notes,Number of Beds with Ventilator,Beds with oxygen,
-Sanjeevni Vyas Hospital,9001090888,Rajasthan,Jhalawar,Beds Available,17/05 08:28 pm,"4 oxygen beds, 6 general beds patients above 80 oxy",,,1
-Sparsh Hospital,9166333209,Rajasthan,Sanganer,Beds Available,17/05 08:28 pm,4 normal beds ,,,1
-"Amar Hospital , Fatehpur",9413344297,Rajasthan,Fatehpur,Beds Available,17/05 08:28 pm,"ICU (05)
-Oxygen beds (10)
-Normal beds (20) O2 above 80",,,1
-The Ambassador Hotel Model colony run by senior doctors (JITO),"8087140887, 9823288800",Maharashtra,Pune,Beds Available,17/05 08:29 pm,No ICU. O2 + General - 10-15. O2 should be above 88.,,,1
-Rainbow Hospital,9511223623,Maharashtra,Pune,Beds Available,17/05 08:29 pm,10 oxygen beds for covid patient ,,,1
-Kaya Hospital ,8770370287,Madhya Pradesh,Gwalior,Beds Available,17/05 08:31 pm,"ICU (13)
-Oxygen beds (12)
-Normal beds (25)
-Sp02 85.",,12,1
-Gian Sagar Medical College and Hospital,"6284177567, 01762 520 000, 9910223322, 9582041424",Punjab,Patiala,Beds Available,17/05 08:47 pm,"Asked to call 8699646607, Oxygen beds (150)
-Sp02 80+",,,1
-Savitri Hospital ,9818709813,Delhi,Delhi,Beds Available,17/05 08:32 pm,"Oxygen beds (02)
-Normal beds (02)",,,1
+name,contact,state,city,status,date_time,info
+Sanjeevni Vyas Hospital,9001090888,Rajasthan,Jhalawar,Beds Available,26/05 10:43 am,
+Sparsh Hospital,9166333209,Rajasthan,Sanganer,Beds Available,26/05 10:43 am,"1 ventilator bad, 30 oxygen beds, 10 without oxygen and are admitting patients of all oxygen levels and severity"
+Rainbow Hospital,9511223623,Maharashtra,Pune,Beds Available,26/05 10:43 am,
+Kaya Hospital ,8770370287,Madhya Pradesh,Gwalior,Beds Available,26/05 10:44 am,"25 isolation beds,12 oxygen beds,13 icu beds"
+Career Institute of Medical Science ,9977683553,Madhya Pradesh,Bhopal,Beds Available,26/05 10:44 am,50 isolation beds without oxygen available
+Kukreja Hospital,"7982046610,  01145675000",Delhi,Rajouri Garden,Beds Available,26/05 10:44 am,on mail only.
 Maharaja Agrasen,"9910489495
-8130402916 9474299271, 9958602884, 01140777666",Delhi,City Westend,Beds Available,17/05 08:33 pm,"No ICU.Oxygen beds (5-6), O2/General-50; O2 should be above 90.",,2-3,1
-Ambedkar Nagar Hospital,"01126052016, 9310586617  ",Delhi,Delhi,Beds Available,17/05 08:35 pm,Oxygen beds (200-250) but oxygen saturation should be 85+,,7-8,1
-Indian Spinal Injuries,011-42255384,Delhi,Vasant Kunj,Beds Available,17/05 08:36 pm,"No ICU. Gave info through portal which updated at 8:13pm
-Oxygen beds (33)",,,1
-ESIC Okhla,"011-26814161, (1800-11-3839)",Delhi,Okhla,Beds Available,17/05 08:38 pm,"Oxygen beds (80)
-Spo2 85+",,,1
+8130402916 9474299271, 9958602884, 01140777666",Delhi,Punjabi Bagh,Beds Available,26/05 11:04 am,"oxy, non oxy, icu avbl, no ventilator"
+Ambedkar Nagar Hospital,"01126052016, 9310586617  ",Delhi,Delhi,Beds Available,26/05 11:05 am,oxygen beds(spo 85+)
 Batra Hospital,"8860743272, 011-29903027, 01129958747, 01129903001, 
-01129902001, 01129051280, 29903001 (emergency number given by anattendent)",Delhi,Delhi,Beds Available,17/05 08:44 pm,No ICU. 80+O2 beds. Admittance will depend on the doctor.,,,1
-"Deep Chand Bandhu
-
-","011-27305952, 8929121749, 7290025141",Delhi,Delhi,Beds Available,17/05 07:50 pm,oxy beds available,,97,1
-Swami Dayanand,"9971443252, 011-22581031, 011-22581036, 0112110065",Delhi,Delhi,Beds Available,17/05 08:28 pm,18 normal beds,,,1
-Rajeev Gandhi Super Speciality Hospital,"01122890773, 01122890789, 01122890611, 8595524745",Delhi,Delhi,Beds Available,17/05 08:28 pm,"oxygen beds available, check on app",,,1
-Sanjay Gandhi Memorial Hospital,"011 - 27781047, 01127913220",Delhi,Delhi,Beds Available,17/05 09:08 pm,O2 beds.Need patient details ,,15,1
-Covid Care center CWG Village,9310080537,Delhi,Delhi,Beds Available,17/05 08:52 pm,"100 O2 beds, 150 non-O2. Oxygen level should be 85 and above without support.",,100,1
-DDU,011-25401075,Delhi,Delhi,Beds Available,17/05 08:54 pm,100 beds with oxygen. ICU 20.,20,100,1
-SMS Hospital,080769 56969,Delhi,Delhi,Beds Available,17/05 07:35 pm,oxy beds and icus,,,1
-Jeewan Nursing Home,011 4243 0246,Delhi,Delhi,Beds Available,17/05 07:35 pm,Asked to check government portal.,,,1
-Bensups Hospital,011 4555 0000,Delhi,Delhi,Beds Available,17/05 07:35 pm,"2 icu, 8 isolation beds",,3,1
-Park Hospital,"011 4532 3232, 9315098446, 9899241482",Delhi,Delhi,Beds Available,17/05 07:55 pm,2-3 icu beds,,,1
-Lalitha Hospital,8076868086,Delhi,Begampur,Beds Available,17/05 07:56 pm,oxy beds and icus,2,10,1
-Dr Upendr Madhav Hospital,9650800229,Haryana,Faridabad,Beds Available,17/05 07:56 pm,10 ICU and 10 O2. No ventilator.,,5,1
+01129902001, 01129051280, 29903001 (emergency number given by anattendent)",Delhi,Delhi,Beds Available,26/05 11:05 am,100 oxy beds
+Majeedia Hospital,8588890999,Delhi,Delhi,Beds Available,26/05 12:10 pm,"69 oxygen beds, Icu w/o ventilator-5, Icu with ventilator-5"
+Deen Dayal Upadhyay hospital,011-25401075,Delhi,Delhi,Beds Available,26/05 12:37 pm,281 oxy
+LHMC,"011 2336 3728, 01123498268, 01123498269",Delhi,Delhi,Beds Available,26/05 12:38 pm,200 gen bed
+Sri Balaji Action medical Inst.,"9999174129, 01142888888",Delhi,Delhi,Beds Available,25/05 06:56 pm,"oxy, no icu."
+Mool Chand Khairati Ram Hospital,"9818813891, 01142000000",Delhi,Delhi,Beds Available,26/05 12:46 pm,"1486 beds, call 9958997293 KK Singh to check if admission is possible. Depends on conditions of patient."
+Swami Dayanand,"9971443252, 011-22581031, 011-22581036, 0112110065",Delhi,Delhi,Beds Available,26/05 12:55 pm,"50 oxy, 22581036. To know the exact details, they asked to contact at 01122110065, however the number is found to be inexistent :/"
+Rajeev Gandhi Super Speciality Hospital,"01122890773, 01122890789, 01122890611, 8595524745",Delhi,Delhi,Beds Available,26/05 12:55 pm,"240 oxy, 240 icu"
+Sanjay Gandhi Memorial Hospital,"011 - 27781047, 01127913220",Delhi,Delhi,Beds Available,26/05 12:55 pm,"162 oxygen beds, 7 icu beds"
+Safdargunj Hospital," 011-26730000, 01126707600",Delhi,Delhi,Beds Available,26/05 12:56 pm,421 beds
+Sehgal Neo Hospital,"8527597171,  01145565656",Delhi,Meera Bagh,Beds Available,26/05 12:58 pm,"Oxygen beds available 
+Icu beds available"
+Burari Hospital,011-27611215  01127611201,Delhi,Delhi,Beds Available,26/05 01:20 pm,"no icu, 100-150 oxy"
+Rathi Hospital  Nagloi,9871173355,Delhi,Delhi,Beds Available,26/05 01:20 pm,62 beds
+Tulsi Multi-Speciality Hospital,9650203034,Delhi,Delhi,Beds Available,26/05 01:22 pm,"10 oxy, 4 icu"
+DDU,011-25401075,Delhi,Delhi,Beds Available,26/05 01:22 pm,"no icu, only oxygen beds."
+Kalra Hospital (Pvt),"011 4500 5600, 01145005700,  01125100000",Delhi,Delhi,Beds Available,26/05 01:22 pm,"oxy beds, no icu"
+Jeewan Moti Khera Hospital,072900 96211,Delhi,Delhi,Beds Available,26/05 01:23 pm,"10 oxy, 4 icu"
+SMS Hospital,080769 56969,Delhi,Delhi,Beds Available,26/05 11:18 am,"15 general ,5 icu bed and 16 oxygen bed"
+Jeewan Nursing Home,011 4243 0246,Delhi,Delhi,Beds Available,26/05 11:21 am,"72 - icu - 3, oxy - 18 or 19, non oxy - 27 or 28"
+Bensups Hospital,011 4555 0000,Delhi,Delhi,Beds Available,26/05 11:21 am,"Oxygen - 10
+Non Oxygen - 4
+ICU - 2
+No Ventilator Facilities 
+Only 80 and above oxygen"
+Park Hospital,"011 4532 3232, 9315098446, 9899241482",Delhi,Delhi,Beds Available,26/05 11:24 am,32 beds (info only between 9 am and 3pm.)
+Lalitha Hospital,8076868086,Delhi,Begampur,Beds Available,26/05 11:29 am,"New Call Back Number : +919312746810, general bed,1 ventilator and 15 oxygen beds available"
+Dr Upendr Madhav Hospital,9650800229,Haryana,Faridabad,Beds Available,26/05 11:32 am,10 icu and 10 oxy beds 
 "Jai Shri Ram Hospital, Gurgaon
-",9868416932,Haryana,Gurugram,Beds Available,17/05 07:56 pm,10 oxy beds,,,1
-RIMS Bariatu,8986684439,Jharkhand,Ranchi,Beds Available,17/05 07:57 pm,"200 oxygen beds, 20 ICU with ventilator, Will accept patients with O2 below 80.",5,200+,1
-S R Memorial Hospital,6263919436,Madhya Pradesh,Gwalior,Beds Available,17/05 07:57 pm,"20 normal beds, 10 icus",,8,1
-Samyak Hospital,9329399456,Madhya Pradesh,Indore,Beds Available,17/05 08:08 pm,oxy beds,,,1
-CKRD Hospital ,9414080740,Rajasthan,Jhunjhunu,Beds Available,17/05 08:08 pm,"short supply of oxygen, ICU/ventilator beds available without oxygen support , 97850 21709(new no.),see the portal",,,1
-Saroj Hospital Rohini,011-47903333,Delhi,Delhi,Beds Available,17/05 10:02 pm,17 Oxy Beds ,,,1
-VishwarajHospital,020 6760 6060,Maharashtra,Pune,Beds Available,17/05 10:03 pm,General Beds Available ,,2-3,1
-DY Patil,7796663366,Maharashtra,Pimpri-Chinchwad,Beds Available,17/05 10:04 pm,Oxygen & General Beds ,,10,1
-"Anjuman Islamia Hospital, Prakash Kumar",8102352443,Jharkhand,Ranchi,Beds Available,17/05 10:05 pm,"3 ICU Beds, 6 Oxy & General Beds ",,,1
-"Summer Hospital, POC Surender Oraon","7903432581, 8084490383",Jharkhand,Ranchi,Beds Available,17/05 07:10 pm,oxy beds,,,1
-AnandLok Hospital,0731-4078485,Madhya Pradesh,Indore,Beds Available,17/05 06:51 pm,2 general beds,,,1
-Kaya Hospital,8770370287,Madhya Pradesh,Gwalior,Beds Available,17/05 06:50 pm,"10 oxy, 10 icus",,,1
-Mandala Hospital,9172815943,Maharashtra,Andheri,Beds Available,17/05 06:50 pm,"8 isolation beds, 4 oxy, 4 icu",,,1
-AnandLok Hospital,033 23592932/ +91-9830321714,West Bengal,Kolkata,Beds Available,17/05 01:33 pm,1 ICU bed call 9830788759,,,1
-Jay Hospital,9810848449; 9560432605,Delhi,Delhi,Beds Available,17/05 09:34 pm,"2 oxy beds, no icu beds, no general beds, no ventilator beds,, oxy 75+",,,1
-Brahmand Hospital,9167105009,Maharashtra,Thane,Beds Available,17/05 09:57 pm,normal beds without oxygen ,,,1
-Atal Memorial,0-7552446139,Madhya Pradesh,Bhopal,Beds Available,17/05 09:56 pm,oxygen + ICU available ,,,1
-Pushpawati Hospital,9717159780,Delhi,Delhi,Beds Available,17/05 09:52 pm,"no ICU, some oxygen/ normal beds with oxy but depends on patients condition",,,1
-SGT Hospital,"18001025661, 9311762964",Haryana,Gurugram,Beds Available,17/05 09:49 pm,"ICU, oxygen beds available ",,,1
-Vardaan Hospital and Trauma centre,8199984102,Haryana,Gurugram,Beds Available,17/05 09:46 pm,"Oxygen, ICU beds but depends on patients condition 9671415837(Dr.Praveen) call this doctor and he will guide abour it ",,,1
-Mansaram Hospital,8285853737,Delhi,Nangloi,Beds Available,17/05 09:43 pm,"1 ICU bED, 29 Oxygen beds, takes only patients with oxygen level above 80",,,1
-"Rathi Hospital, Najafgarh","9599198053, 09871173355",Delhi,Delhi,Beds Available,17/05 09:41 pm,oxygen beds available but didnt specify the number ,,15,1
-Konark Hospital,9625695449,Delhi,Nangloi,Beds Available,17/05 10:07 pm,26 Oxy Beds,,,1
-Sapphire Hospital,022 25333222,Maharashtra,Mumbai,Beds Available,17/05 10:08 pm,"60 normal beds, 10 ICU beds with oxyegn , patients with oxy levels 80 above",,,1
-" Bhagat Chandra hospital, mahavir enclave.","1145254525,  9354697563  8395994074  7827473433  01145254550", close to Dwarka,Delhi,Beds Available,17/05 10:08 pm,4 Oxy beds ,,,1
-Sant Nirankari Covid Care ,91-1147660200,Delhi,Delhi,Beds Available,17/05 10:11 pm,400+ Oxy Beds ,,,1
-Sunrise Hospital ,0-1148820000,Delhi,Delhi,Beds Available,17/05 10:12 pm,oxygen beds only,,,1
-Shakuntala nursing home,"9211783762, 9211783761",Delhi,Delhi,Beds Available,17/05 10:14 pm,10+ Oxy Beds ,,,1
-Kalindi hospital (Mr Satish),7895151380,Delhi,Jasola Vihar,Beds Available,17/05 10:15 pm,Oxy Beds ,,,1
-HOME iCU,9873642200,Delhi,Delhi,Beds Available,17/05 09:02 pm,Website: https://homecareplus.co.in/ Home ICU set up available - 12k a day,,,1
-Medipulse Hospital ,9001918358,Rajasthan,Jodhpur,Beds Available,17/05 09:03 pm,general beds available,,,1
-Apoorva Hospitals And Diagnostic Centre,"088846 27777, 080-41608135",Bangalore,Karnataka,Beds Available,17/05 09:25 pm,General beds,,,1
+",9868416932,Haryana,Gurugram,Beds Available,26/05 11:33 am,"10 oxy, no icu"
+S R Memorial Hospital,6263919436,Madhya Pradesh,Gwalior,Beds Available,26/05 11:37 am,"50 beds, 20 oxygen and 30 non oxygen bed available"
+Universal Hospital,9893643851,Madhya Pradesh,Indore,Beds Available,26/05 11:42 am,"Oxy General ward 2
+Oxygen Level 80 and abov"
+Charak Hospital,7947292370,Madhya Pradesh,Indore,Beds Available,26/05 11:43 am,50 beds
+Sunrise Hospital,9300720720,Madhya Pradesh,Indore,Beds Available,26/05 11:50 am,"3 gen,"
+CKRD Hospital ,9414080740,Rajasthan,Jhunjhunu,Beds Available,26/05 11:50 am,"icu - 20, 50 to 70 beds of all types"
+"Vivekanand Swasthay Sewa Samiti Hospital
+",9413378691,Rajasthan,Bhadra,Beds Available,26/05 11:50 am,5-7
+Saroj Hospital Rohini,011-47903333,Delhi,Delhi,Beds Available,26/05 11:51 am,"68 oxy, 17 icu"
+Ojas Hospital,8888588880,Maharashtra,Pune,Beds Available,26/05 11:38 am,"no ICU beds, only oxy and non oxy beds"
+DY Patil,7796663366,Maharashtra,Pimpri-Chinchwad,Beds Available,26/05 11:45 am,"They do have beds including ventilator. Admittance to oxygen beds will depend on patient status.
+http://103.224.247.133:8080/Covid19PCMC/?wicket:interface=:1::::"
+Dr Baba Saheb Ambedkar Hospital,"01127049963,",Delhi,Delhi,Beds Available,26/05 11:53 am,"192 oxygen beds, no ICU and ventilator beds"
+"PRANAMI, KIRTI SHARMA",7988934638,Haryana,Hisar,Beds Available,26/05 11:59 am,"12 oxy, 5 non oxygen beds available"
+KIndCare (nursing services),9654535285,Haryana,Faridabad,Beds Available,26/05 12:33 pm,13 in total
+Shree Gajanan Hospital,7887884983,Maharashtra,Bhosari ( pune suburb),Beds Available,26/05 12:32 pm,100+ oxy.
+Mool Chand ( Park Inn by Radisson),9971844827/ 9873234732,Delhi,Delhi,Beds Available,25/05 08:12 pm,10-15 Oxy beds
+Mandala Hospital,9172815943,Maharashtra,Andheri,Beds Available,25/05 01:55 pm,"10 ( oxygen) , 10 non oxy
+5 (icu)"
+HAHC hospital,"8588890999, 7291970608, 9910532446, 9136033349, 01126059671",Delhi,Hamdard Nagar,Beds Available,25/05 01:59 pm,"General beds (w/o oxy) - 251
+Oxygen beds - 67
+Icu (without ventilator)- 5
+Ventilator- 7 beds"
+Savesadan,6204801102,Jharkhand,Ranchi,Beds Available,25/05 02:23 pm,40 Oxygen beds
+AnandLok Hospital,033 23592932/ +91-9830321714,West Bengal,Kolkata,Beds Available,25/05 02:29 pm,"call 9830788759, details only to patient"
+Noble hospital,0129-4006483/9871673949,Delhi,badhkal,Beds Available,26/05 01:31 pm,
+KK Hospital,O5222231932,Uttar Pradesh,Lucknow,Beds Available,26/05 01:31 pm,Some oxy beds
+" Bhagat Chandra hospital, mahavir enclave.","1145254525,  9354697563  8395994074  7827473433  01145254550", close to Dwarka,Delhi,Beds Available,26/05 12:56 pm,"some oxygen,icu and general beds available"
+New India Hospital ,7466081174,kanpur,UP,Beds Available,26/05 12:59 pm,"6 icu, 12 oxy, "
+Lords Hospital Research centre,"9351233471 , 7665322200",Tijara road rj,Delhi,Beds Available,26/05 01:02 pm,50 beds(normal+o2) available
+GMC BHOPAL,9329273928,Madhya Pradesh ,Bhopal,Beds Available,26/05 01:32 pm,icu and oxygen beds are available for all ages
+Maa Chandrika Devi Hospital,"9415020266, 9140190282",Uttar Pradesh,Lucknow,Beds Available,26/05 01:32 pm,39 oxy beds
+Sunrise Hospital ,"0-1148820000, 9711437535",Delhi,Delhi,Beds Available,26/05 01:33 pm,oxy beds available
+Saras Hospital,"0-8409007938, 8340302165, 7542069363",Patna,Bihar,Beds Available,26/05 01:38 pm,"4 general, 5 oxy, 5 icu"
+Rajesh Maithil,9826838064,Bhopal,Madhya Pradesh,Beds Available,26/05 01:57 pm,10 beds available
+Kalindi hospital (Mr Satish),7895151380,Delhi,Jasola Vihar,Beds Available,26/05 03:38 pm,"30 oxy, 10 icu, no ventilators"
+Doon medical college (PRO Office),9412080805,Uttarakhand,Dehradun,Beds Available,26/05 03:38 pm,"oxy only, no icu/ventilators"
+AIIMS Rishikesh (Harish Thapliyal),"8475000743, 8475-000144",Uttarakhand,Rishikesh,Beds Available,26/05 03:43 pm,"oxy only, no icu/ventilators"
+"Shri Ram Hospital, Pal Road",9782657338,Rajasthan,Jodhpur,Beds Available,26/05 03:01 pm,"https://www.google.com/url?q=https://covidinfo.rajasthan.gov.in/COVID19HOSPITALBEDSSTATUSSTATE.aspx&sa=D&source=editors&ust=1621870098367000&usg=AFQjCNF373Rfl9GwMDTecpTHZHdetXL-TQ 
+
+7 total, 2 icu, 3 ventilators"
+Ehaa Hospital,080 2365 5959,Bangalore,Karnataka,Beds Available,26/05 03:55 pm,"4 total, 1 icu, no ventilator"
+Ambala Hospital,9910223322,Punjab,Chandigarh,Beds Available,26/05 04:41 pm,"6 ventilator, 10 ICU ,10 oxygen beds available"
+Sanjeevni Hospital,919801110547,Bihar,Patna,Beds Available,26/05 04:41 pm,5 oxy beds
+Park Hospital,0-1244900000,Delhi,Gurugram,Beds Available,26/05 04:41 pm,"beds available, did not dislose specifics"
+"MAX SS HOSPITAL, PATPARGANJ",8800333777,Delhi,Patparganj,Beds Available,26/05 04:42 pm,Not responding
+"Pushpawati Singhania Hospital, Saket ","91 - 011 - 61426142 , 91 - 011 - 30611700 , 9582261515, 011-30611886",Delhi,Saket,Beds Available,26/05 04:42 pm,"ICU and Wards- 115
+depends on doctor
+Additional Info- depends on doctor,number to 9717159780"
+Medeor Hospital ,"01141222222, 8130390341",Delhi,Qutub Instl. Area,Beds Available,26/05 04:42 pm,"ICU - 6
+Oxygen beds- 8 to 9 but require patient details "
+CD Global Hospital ,9310171264,Delhi,Najafgarh,Beds Available,26/05 04:43 pm,"Told to check portal
+On portal:
+"
+Dhanadhri Hospital Borivali ,022 2866 1050,Maharashtra,Mumbai,Beds Available,26/05 04:44 pm,
+Well n care (ICU Setup at Home) ,9958466083,Delhi,Delhi,Home Setup,26/05 11:05 am,"ICU home setup
+They charge patients depending on severity and facilities required
+Located in Delhi NCR"
+HOUSEPITAL (Home Service),"9990911911, 8744888888",Haryana,Faridabad,Home Setup,26/05 11:32 am,50 O2 and 50 ICU beds can be provided
+AgVa Healthcare,7330405060,Uttar Pradesh,Noida,Home Setup,26/05 11:53 am,supplies to hosps - not resp
+HOME iCU,9873642200,Delhi,Delhi,Home Setup,26/05 03:47 pm,Website: https://homecareplus.co.in/ Home ICU set up available - 12k a day
+Gian Sagar Medical College and Hospital,"6284177567, 01762 520 000, 9910223322, 9582041424",Punjab,Patiala,Call to check soon,26/05 10:44 am,"10 icu, 28 O2, 152 general; Asked to call 8699646607"
+HAH Centenary Hospital,011-26059671,Delhi,Delhi,Call to check soon,26/05 11:05 am,
+DRDO'S SVP COVID Hospital,"7835964370, 9968656990 , 9868100678, 9818047498, 9968503421 ",Delhi,Delhi,Call to check soon,26/05 11:05 am,They will do it based on a patient basis. Not giving data.
+Indian Spinal Injuries,011-42255384,Delhi,Vasant Kunj,Call to check soon,26/05 11:05 am,74 O2 beds available(check the website)
+Sir Ganga Ram Hospital (Pvt),"01142253001, 01142253002, 01142253003, 9311407393, 9311407391,  01142255555",Delhi,Delhi,Call to check soon,26/05 11:05 am,"avbl - check app, SPO2 90 51 O2 beds."
+Advanced Neuro and General Hopital,9415022002,Uttar Pradesh,Lucknow,Call to check soon,26/05 11:53 am,"not covid hosp | 7 ventilator beds, 8 ICU beds, 55 oxygen beds"
+Sharda Hospital,08800104573,Uttar Pradesh,Greater Noida,Call to check soon,26/05 01:24 pm," 0120 2333999,, 8800104573 emergency contact; asked to contact the first number. Unable to punch in the option. Please prefix 0 to the first number."
+Subharti Hospital ,"096390 10313, 01216678000",Uttar Pradesh,Meerut,Call to check soon,25/05 08:14 pm,oxygen beds available--ALTERNATE NUMBER: 09639010215
+Manipal Hospital,"8448288367, 84486 96558 ",Delhi,Dwarka,Call to check soon,26/05 01:25 pm,"no icu, oxygen beds available for patients with spo2 above 85"
+Goyal Hospital,8700001648,Delhi,Paschim Vihar,Call to check soon,25/05 03:16 pm,"additional number: 8709637942     7 ICU beds, uncounted oxygen and general beds available, no ventilators - admitting spo2 below 90"
+Brahmand Hospital,9167105009,Maharashtra,Thane,Call to check soon,26/05 01:26 pm,"8 oxygen beds, 2 ventilator"
+Max East/ West Block,"0-1126515050, 8447786890",Delhi,Delhi,Call to check soon,26/05 01:26 pm,9958989855/8447786890 - based on patient details
+"Covid Care Centre, Dwarka","8802222677, 9015172141, 9560257717",Delhi,Delhi,Call to check soon,26/05 01:26 pm,50 general beds available
+SGT Hospital,"18001025661, 9311762964",Haryana,Gurugram,Call to check soon,26/05 01:26 pm,"PLS ADD: 9311590712 & 9311762964. REMOVE THE FIRST NUMBER IN COLUMN B. Oxygen and non oxygen beds available ... 
+ICU and Ventilators are not available"
+Konark Hospital,"9625695449, 9971646244",Delhi,Nangloi,Call to check soon,26/05 01:26 pm,"general isolation beds 21, ICU beds 9, oxygen beds 6"
+Galaxy Hospital,9801110547,Muzaffarpur,Bihar,Call to check soon,26/05 01:52 pm,5 oxy
+Lotus Hospital ,0124-4767676,Delhi,Gurugram,Call to check soon,26/05 04:41 pm,
+"St. Stephens Hospital, Tis Hazari",1123966021,Delhi,Tis Hazari,Call to check soon,26/05 04:42 pm,
+"Venkateshwar Hospital, Dwarka ",7290072997,Delhi,Dwarka,Call to check soon,26/05 04:42 pm,
+Ashirwad Hospital Malad,098204 21003,Maharashtra,Mumbai,Call to check soon,25/05 04:39 pm,remove it
+Diamond Hospital Malad,"02265188741, 9819023567",Maharashtra,Mumbai,Call to check soon,26/05 04:44 pm,OXYGEN FEW BEDDS
+ Lifecare Hospital,9503189884,Maharashtra,Pune,Call to check soon,26/05 10:43 am,"3 ventilator beds are available, 10 oxygen beds and 18 non oxygen beds are available"
+Madhukar Rainbow Children hospital,"18002122, 9100065913, 8448284610, +91-8439185914",Delhi,Malviya Nagar,Beds Available,26/05 11:05 am,beds Available but will ask for Patient's details.
+JSS Hospital,0821 2335555,Karnataka,Mysuru,Available,26/05 05:51 PM,
+SUT Royal Hospital Ulloor,0471 417 7777,Kerala,Thiruvananthapuram,Available,25/05 07:07 PM,
+CHC garla hospital,9866330493,Telangana,Mahabubabad,Available,24/05 08:42 PM,
+District hospital- Karimnagar,9441701979,Telangana,Karimnagar,Available,24/05 08:38 PM,
+OSMANIA general hospital,9849902977,Telangana,Hyderabad,Available,24/05 08:36 PM,
+Esic hospital,7702985555,Telangana,Hyderabad,Available,24/05 08:33 PM,
+RIMS hospital,9701501055,Telangana,Adilabad(U),Available,24/05 08:27 PM,
+Pranavam Hospital,9447111540,Kerala,Kollam,Available,24/05 08:13 PM,
+"Orthomed Hospital, Royapettah",9080555781,Tamil Nadu,Chennai,Available,24/05 07:42 PM,
+Meenakshi Engineering College,9445036523,Tamil Nadu,Chennai,Available,24/05 07:41 PM,
+"Maya Nursing Home, Ashok Nagar",9841383989,Tamil Nadu,Chennai,Available,24/05 07:39 PM,
+Apollo Hospitals Tondiarpet,044-25913333,Tamil Nadu,Chennai,Available,24/05 07:36 PM,
+MVJ Medical College And Research Hospital,080 2806 0200,Karnataka,Bengaluru,Available,23/05 06:58 PM,
+M S Ramaiah Hospital,080 2360 9999,Karnataka,Bengaluru,Available,23/05 06:58 PM,
+Vimalalaya Hospital A Unit Of Vimalalaya Hospital, 095130 25255,Karnataka,Bengaluru,Available,23/05 06:57 PM,
+Vikram Hospital Bengaluru Private Limited,080 6191 4686,Karnataka,Bengaluru,Available,23/05 06:57 PM,
+The Bangalore Hospital,080 4278 1643,Karnataka,Bengaluru,Available,23/05 06:57 PM,
+ST MARTHAS Hospital,080 4012 8200,Karnataka,Bengaluru,Available,23/05 06:57 PM,
+Gunasheela Surgical And Maternity Hospital,0821 234 3585,Karnataka,Bengaluru,Available,23/05 06:54 PM,
+Gayathri Hospitals Pvt Limited,080 2335 2085,Karnataka,Bengaluru,Available,23/05 06:54 PM,
+BANGALORE BAPTIST HOSPITAL,"080 2202 4700, 9448496615, 9480689770",Karnataka,Bengaluru,Available,23/05 06:53 PM,
+Katuri Medical collage,0863-2288555,Andhra Pradesh,Guntur,Needs Verification,26/05 06:52 PM,
+Neyyar Medicity Kattakada,080863 11111,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:14 PM,
+Mamal Multi Speciality Hospital ,0471 229 2684,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:12 PM,
+Kandala Cooperative Hospital,0471 229 7555,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:11 PM,
+Procare hospital Karette ,0470 283 8888,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:11 PM,
+DPMS Hospital Karakulam,0471 237 3004,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:09 PM,
+TSC Hospital Kazhakoottam,0471 241 2127,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:09 PM,
+Attukal Devi  Hospital Attukal,0471 245 9040,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:08 PM,
+SP Hospital Parassala,081119 05422,Kerala,Thiruvananthapuram,Needs Verification,25/05 07:04 PM,
+Gandhi hospital,7898085425,Telangana,Hyderabad,Needs Verification,24/05 08:49 PM,
+DH utnoor hospital,9100157771,Telangana,Adilabad(U),Needs Verification,24/05 08:45 PM,
+Matha Hospital Kollam,0474 270 1003,Kerala,Kollam,Needs Verification,24/05 08:15 PM,
+Saraswathy Hospital Parassala,0471 220 2598,Kerala,Thiruvananthapuram,Needs Verification,24/05 08:12 PM,
+NIMS Neyyattinkara,0471 222 2115,Kerala,Thiruvananthapuram,Needs Verification,24/05 08:10 PM,
+Pulse Medicare Hospital Nalanchira,070121 89356,Kerala,Thiruvananthapuram,Needs Verification,24/05 08:10 PM,
+"Dr. Somervell Memorial CSI Medical College Hospital, Karakonam",0471 225 0233,Kerala,Thiruvananthapuram,Needs Verification,24/05 08:10 PM,
+Sree Gokulam Medical College Venjaramoodu,0472 304 1234,Kerala,Thiruvananthapuram,Needs Verification,24/05 08:07 PM,
+"Jayam Nursing Home, Old Washermenpet",9884630966,Tamil Nadu,Chennai,Needs Verification,24/05 07:48 PM,
+General Hospital Thiruvananthapuram,4712303870,Kerala,Thiruvananthapuram,Needs Verification,23/05 07:20 PM,
+Ashwini Hospital,9066770077,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+MANGALA RAITHA BHAVANA HEBBAL,080 23627969,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+Kormangala Indoor Stadium,098801 35916,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+Adugodi CCC(Bosch Sports Complex),,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+The Oxford Medical College Hospital And Research Center,080 6185 4101,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+Vydehi Hospital,080 4906 9000,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+St Johns Medical College Hospital,080 4946 6029,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+Sapthagiri Super Speciality Hospital,080 2839 3392,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+Rajarajeswari Medicalcollege And Hospital,080 2843 7444,Karnataka,Bengaluru,Needs Verification,23/05 06:58 PM,
+KIMS Hospital And Research Center,080 2662 4870,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+East Point Hospital,098862 63883,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Yashomati Hospitals,080 4322 1000,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+V CARE MEDISCON HOSPITAL,080 2547 0532,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+TRUSTWELL HOSPITALS PRIVATE LIMITED,080 4566 6777,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Trinity Hospital And Heart Foundation,080 4013 6999,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Suguna Hospital Bangalore,080 4019 4444,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+ST THERESAS HOSPITAL,080 2347 2772,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+St Philomenas Hospital,080 4016 4433,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+SSNMC Super Specialty Hospital,080676 66766,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Sri Ashwini Hospital,080 4210 3880,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Specialist Health System Pvt Limited,080 4212 2222,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Sevakshetra Hospital,080 2671 4194,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Saralaya Hospitals Pvt Ltd,097405 10470,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Santosh Hospital,7947111546,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Sanjeevini Hospital,91 90151 15511,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Sakra Hospital,080 4969 4969,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+REPUBLIC HOSPITAL,080 4124 5450,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Rangadore Hospital,080 2698 3300,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Ramaiah Harsha Hospital,080 2772 4003,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Raksha Multispeciality Hospital,080 2347 1005,Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+Prakriya Hospitals A Unit Of C Square Healthcare,"095137 33334, 9606698784",Karnataka,Bengaluru,Needs Verification,23/05 06:57 PM,
+New Janapriya Super Specialty Hospital,080 6135 5555,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+Navachethana Hospital A Unit Of Pan Asia Hospitals,080 4248 0000,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+Narayana Hrudayalaya Private Limited,0821 712 2222,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+N R R Hospital,098866 27611,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+Mediscope Chest And Super Speciality Hospital,080 7196 6536,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+Amar Hospital,99459 27344,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+Manasa Hospital (Non Covid),98450 50887,Karnataka,Mysuru,Needs Verification,23/05 06:56 PM,
+ Shifa Hospital,080- 40007300,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+"Supurva Hospital
+Vasanthapura",080 4141 0031,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+"Samastha Hospital
+Vasanthapura ",072040 52245,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+"DG Hospital
+Padmanabhanagar","080 2669 6179, 9845266023",Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+SS SPARSH HOSPITAL (ICU Yes),9606698784,Karnataka,Bengaluru,Needs Verification,23/05 06:56 PM,
+"Sri Sai Ram Hospital
+Yellachenahalli",080 2686 0159,Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Dr. Vishnuvardhan Road PM Santosha Hospital (ICU Yes),"079966 66888, 07996666889",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Fortis Hospital Bannerghatta (ICU Yes),"9513805945, 096633 67253",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Dr Malathi Manipal Hospital (ICU Yes,"7259278034, 080-40091000",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+BGS GLOBAL HOSPITAL (ICU Yes),9972012255,Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+"Shankar Super Speciality Hospital, I(ICU???)",083510 81085,Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Ritu Hospital (NO ICU),Naveen 9900108100,Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Apollo Bannerghatta Road (ICU Yes),"08026304189, 08026304109",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
 Astra Hospital (ICU yes),"Vishnu 9902229090, Suresh (CEO) 85535 01501
-",Bangalore, Karnataka,Beds Available,17/05 08:39 pm,"No oxygen beds, only non oxygen beds",,,1
-Dr. Vishnuvardhan Road PM Santosha Hospital (ICU Yes),"079966 66888, 07996666889",Bangalore, Karnataka,Beds Available,17/05 08:38 pm," 079966 66889- try this number, They have beds but will depend on patient saturation",,,1
-Prakriya Hospitals A Unit Of C Square Healthcare,"095137 33334, 9606698784",Bangalore,Karnataka,Beds Available,17/05 08:25 pm,few oxygen beds,,5-6,1
-Raksha Multispeciality Hospital,080 2347 1005,Bangalore,Karnataka,Beds Available,17/05 08:25 pm,genereal beds,,,1
-Sanjeevni Hospital,919801110547,Bihar,Patna,Beds Available,17/05 08:06 pm,Oxygen beds only,,,1
-Mann Multi-Speciality Hospital ,"9053025025, 7504512345",Delhi,Rohtak,Beds Available,17/05 08:06 pm,"Oxygen beds and ICU available, no ventilator",,25,1
-Lotus Hospital ,0124-4767676,Delhi,Gurugram,Beds Available,17/05 08:06 pm,"Only normal oxygen beds, NO ICU or Ventilators",,,1
-Medeor Hospital ,"01141222222, 8130390341",Delhi,Qutub Instl. Area,Beds Available,17/05 07:58 pm,oxygen but require patient details ,,,1
-Baddi ,9811955525,Himachal Pradesh,Baddi,Beds Available,17/05 07:56 pm,"10 Oxygen beds, few icu beds",,,1
-Diamond Hospital Malad,"02265188741, 9819023567",Maharashtra,Mumbai,Beds Available,17/05 07:55 pm,OXYGEN FEW BEDDS,,,1
-"Radha Soami Satsang -Beas,
-Bhati Mines,  Chhatarpur,Nr. Sawan public school","011 26654913, 01126655547",Delhi,Qutub Minar Road,Beds Available,17/05 08:34 pm,"Oxygen beds (50+)
-Normal beds (50+) they do accept, 85% oxy level se above hona chaiye",,,4
-Mangala  hospital,9172815943,Maharashtra,Andheri,Beds Available,17/05 08:30 pm,"ICU (04)
-Oxygen beds (08)
-Normal beds (06)",,,5
-MVJ Medical College And Research Hospital,080 2806 0200,Bangalore,Karnataka,Beds Available,17/05 08:14 pm,Only general beds,,,5
-"BLK Hospital, Pusa Road Pvt","9871748578, 8448386700, 9311365796 01130653299, 8130697446, 01130653040",Delhi,Delhi,Beds Available,17/05 08:27 pm,Ph no 011-30653040 is that of pharmacy. Please remove.,,Didnt disclose ,
+",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Cura Hospital,"Shwetha 9148002188, Reception 8431241430",Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Bommanahalli Zonal Helpline 24x7,8884666670,Karnataka,Bengaluru,Needs Verification,23/05 06:55 PM,
+Mallige Medical Centre Private Limited,08067165555,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Leena Multispeciality Hospital,099017 64666,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Jeevika Hospitals Pvt Ltd,070222 88504,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Fortis Hospital Bannerghatta,"096633 67253, 08066214101, 08066214171",Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Ehaa Hospital,080 2365 5959,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Dr Malathi Manipal Hospital ,080 4009 1000,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Columbia Asia Referral Hospital Yeshwanthpur,080 6165 6262,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Columbia Asia Hospital White Field,080 6165 6666,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Columbia Asia Hospital Hebbal,080666 00666,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Columbia Asia Hospital Doddaballapura,080666 06666,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Chinmaya Mission Hospital,08025280461,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+BROOKEFIELD HOSPITAL,080 4244 5555,Karnataka,Bengaluru,Needs Verification,23/05 06:54 PM,
+Bhagwan Mahaveer Jain Hospital Girinagar,080 6176 5555,Karnataka,Bengaluru,Needs Verification,23/05 06:53 PM,
+Bhagwan Mahaveer Jain Hospital,080 4087 5500,Karnataka,Bengaluru,Needs Verification,23/05 06:53 PM,
+BGS GLOBAL HOSPITAL,080 2625 5555,Karnataka,Bengaluru,Needs Verification,23/05 06:53 PM,
+BANGALORE INSTITUTE OF GASTROENTEROLOGY,080677 79777,Karnataka,Bengaluru,Needs Verification,23/05 06:53 PM,
+Aster RV Hospital,080660 40400,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Aster CMI Hospital,080 4342 0100,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Apoorva Hospitals And Diagnostic Centre,"088846 27777, 080-41608135",Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+APOLLO HOSPITALS ENTERPRISES LIMITED SHESHADRIPUR,080 4668 8888,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Apollo Hospitals Bannerghatta A Unit Of Imperial Hospital,"080 2630 4050, 08026304109",Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Ananya Hospital Pvt Ltd Rajajinagar,080 2352 7422,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+ABHAYA HOSPITAL,090350 16740,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Aaxis Hospital,070900 00384,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Victoria Hospital,080 2670 1150,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Govt HSIS Gosha Hospital,080 2286 6529,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Bowring And Lady Curzon Hospitals,08025591325,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Sir C V Raman General Hospital Indiranagar,080-25281246,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+ESI Hospital Indiranagar,080 2526 6994,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+EMPLOYEES STATE INSURANCE CORPORATION Peenya,080 2837 0088,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+KC General Hospital,080 23341771,Karnataka,Bengaluru,Needs Verification,23/05 06:52 PM,
+Rajarajeswari medical college and hospital,080 28437444,Karnataka,Kambipura,Needs Verification,23/05 06:52 PM,
