@@ -1,5 +1,5 @@
 from bot import telegram_chatbot
-from extract_data import *
+from load_data import *
 
 bot = telegram_chatbot('config.cfg')
 
