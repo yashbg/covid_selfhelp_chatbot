@@ -26,7 +26,7 @@ def make_reply(data=None, info=None, counter=None):
             reply = f"{data[4]} {data[1]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
         if pd.notna(info['status'][counter]):
             reply += f"\nStatus: {info['status'][counter]}"
-            if info['date_time'][counter]:
+            if pd.notna(info['date_time'][counter]):
                 reply +=f"\nDate/Time of Verification: {info['date_time'][counter]}"
         if pd.notna(info['info'][counter]):
             reply += f"\nAdditional Info: {info['info'][counter]}"

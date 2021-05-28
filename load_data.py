@@ -41,7 +41,12 @@ def get_city_list(reqmnt, state):
         df = oxygen_df[oxygen_df['state'] == state]
         output = df['city']
         output = output.drop_duplicates()
-        return list(output)
+        output = list(output)
+        if state == 'Delhi':
+            del output[2]
+        if state == 'Uttar Pradesh':
+            del output[9]
+        return output
     elif reqmnt == "Hospital Beds":
         df = hospital_bed_df[hospital_bed_df['state'] == state]
         output = df['city']
@@ -52,6 +57,8 @@ def get_plasma_city_list(type):
     if type == "Organisations":
         output = plasma_org_df['city']
         output = output.drop_duplicates()
+        output = list(output)
+        del output[22]
         return output
     else:
         output = plasma_donor_df['city']
