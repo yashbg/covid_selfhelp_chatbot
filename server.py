@@ -20,6 +20,8 @@ def make_reply(data=None, info=None, counter=None):
             reply = f"{data[1]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
         elif data[1] == 'Medicines':
             reply = f"{data[1]} in {data[2]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
+            if pd.notna(info['city'][counter]):
+                reply += f"\nLocation: {info['city'][counter]}"
         elif data[1] == 'Plasma' and data[2] == 'Organisations':
             reply = f"{data[1]} {data[2]} in {data[3]}:\nName: {checkna(info['name'][counter])}\nContact No.: {checkna(info['contact'][counter])}"
         elif data[0] == 'plasma_donor_bloodgrp' or (data[0] == 'end' and data[1] == 'Plasma' and data[2] == 'Donors'):
