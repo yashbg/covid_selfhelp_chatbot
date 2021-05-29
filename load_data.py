@@ -16,25 +16,25 @@ def get_reqmnt_list():
     Plasma (Donors) -> Blood Group -> Info"""
     
     reqmnt_list = ['Oxygen', 'Hospital Beds', 'Medicines', 'Plasma']
-    return reqmnt_list.sort()
+    return sorted(reqmnt_list)
 
 def get_plasma_type_list():
     plasma_type_list = ['Organisations', 'Donors']
-    return plasma_type_list.sort()
+    return sorted(plasma_type_list)
 
 def get_state_list(reqmnt):
     if reqmnt == "Oxygen":
         output = oxygen_df['state']
         output = output.drop_duplicates()
-        return list(output).sort()
+        return sorted(list(output))
     elif reqmnt == "Hospital Beds":
         output = hospital_bed_df['state']
         output = output.drop_duplicates()
-        return list(output).sort()
+        return sorted(list(output))
     elif reqmnt == 'Medicines':
         output = medicine_df['state']
         output = output.drop_duplicates()
-        return list(output).sort()
+        return sorted(list(output))
 
 def get_city_list(reqmnt, state):
     if reqmnt == "Oxygen":
@@ -48,12 +48,12 @@ def get_city_list(reqmnt, state):
         if state == 'Uttar Pradesh':
             if 'Shree Maa Enterprises, Madhav Complex, Alambagh, Lucknow' in output:
                 output.remove('Shree Maa Enterprises, Madhav Complex, Alambagh, Lucknow')
-        return output.sort()
+        return sorted(output)
     elif reqmnt == "Hospital Beds":
         df = hospital_bed_df[hospital_bed_df['state'] == state]
         output = df['city']
         output = output.drop_duplicates()
-        return list(output).sort()
+        return sorted(list(output))
 
 def get_plasma_city_list(type):
     if type == "Organisations":
@@ -62,17 +62,17 @@ def get_plasma_city_list(type):
         output = list(output)
         if 'Kurukshetr, Haryana or Jirkpur (Punjab)' in output:
             output.remove('Kurukshetr, Haryana or Jirkpur (Punjab)')
-        return output.sort()
+        return sorted(output)
     else:
         output = plasma_donor_df['city']
         output = output.drop_duplicates()
-        return list(output).sort()
+        return sorted(list(output))
 
 def get_plasma_donor_bloodgrp_list(city):
     df = plasma_donor_df[plasma_donor_df['city'] == city]
     output = df['bloodgrp']
     output = output.drop_duplicates()
-    return list(output).sort()
+    return sorted(list(output))
 
 def get_info(reqmnt, state, city):
     if reqmnt == "Oxygen":
