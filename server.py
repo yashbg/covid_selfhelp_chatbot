@@ -1,7 +1,26 @@
+import os, csv
+from datetime import datetime
 from bot import telegram_chatbot
 from load_data import *
 
 bot = telegram_chatbot('config.cfg')
+
+def check_new_user(item):
+    if ('message' in item) and ('text' in item['message']):
+        if item['message']['text'] == "/start":
+            with open('user_info.csv', 'a') as csvfile:
+                writer = csv.writer(csvfile, delimiter=',', lineterminator='\n')
+                if os.stat('user_info.csv').st_size == 0:
+                    writer.writerow(['update_id', 'username', 'chat_id', 'date'])
+                try:
+                    username = str(item['message']['from']['username'])
+                except:
+                    username = None
+                chat_id = item['message']['chat']['id']
+                dateInt = int(str(item["message"]["date"])[:10])
+                date = datetime.fromtimestamp(dateInt).strftime('%Y-%m-%d %I:%M:%S %p')
+                row = [update_id, username, chat_id,date]
+                writer.writerow(row)
 
 def make_intro():
     reply = 'Hello. I am the COVID Self Help Chatbot.'
@@ -92,33 +111,37 @@ plasma_type_list = []
 plasma_donor_bloodgrp_list = []
 update_id = None
 while True:
-    updates = bot.get_updates(offset=update_id)
-    updates = updates['result']
-    if updates:
-        for item in updates:
-            update_id = item['update_id']
-            if 'callback_query' in item:
-                item = item['callback_query']
-                callback_id = item['id']
-                from_ = item['from']['id']
-                message_id = item['message']['message_id']
-                data = item['data'].split(':')
-                if data[0] == 'reqmnt':
-                    if data[1] == 'Plasma':
-                        plasma_type_list = get_plasma_type_list()
-                    else:
-                        state_list = get_state_list(data[1])
-                elif data[0] == 'plasma_type':
-                    city_list = get_plasma_city_list(data[2])
-                elif data[0] == 'state':
-                    city_list = get_city_list(data[1], data[2])
-                elif data[0] == 'city' and data[1] == 'Plasma' and data[2] == 'Donors':
-                    plasma_donor_bloodgrp_list = get_plasma_donor_bloodgrp_list(data[3])
-                answer_query(data, reqmnt_list, state_list, city_list, plasma_type_list, plasma_donor_bloodgrp_list, from_, message_id, callback_id)
-            elif 'message' in item:
-                item = item['message']
-                from_ = item['from']['id']
-                reply = make_intro()
-                bot.send_message(reply, from_)
-                reply = make_reply()
-                bot.send_message_inline(reply, 'reqmnt', reqmnt_list, from_)
+    try:
+        updates = bot.get_updates(offset=update_id)
+        updates = updates['result']
+        if updates:
+            for item in updates:
+                check_new_user(item)
+                update_id = item['update_id']
+                if 'callback_query' in item:
+                    item = item['callback_query']
+                    callback_id = item['id']
+                    from_ = item['from']['id']
+                    message_id = item['message']['message_id']
+                    data = item['data'].split(':')
+                    if data[0] == 'reqmnt':
+                        if data[1] == 'Plasma':
+                            plasma_type_list = get_plasma_type_list()
+                        else:
+                            state_list = get_state_list(data[1])
+                    elif data[0] == 'plasma_type':
+                        city_list = get_plasma_city_list(data[2])
+                    elif data[0] == 'state':
+                        city_list = get_city_list(data[1], data[2])
+                    elif data[0] == 'city' and data[1] == 'Plasma' and data[2] == 'Donors':
+                        plasma_donor_bloodgrp_list = get_plasma_donor_bloodgrp_list(data[3])
+                    answer_query(data, reqmnt_list, state_list, city_list, plasma_type_list, plasma_donor_bloodgrp_list, from_, message_id, callback_id)
+                elif 'message' in item:
+                    item = item['message']
+                    from_ = item['from']['id']
+                    reply = make_intro()
+                    bot.send_message(reply, from_)
+                    reply = make_reply()
+                    bot.send_message_inline(reply, 'reqmnt', reqmnt_list, from_)
+    except:
+        pass
