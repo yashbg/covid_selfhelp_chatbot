@@ -1,4 +1,5 @@
 __pycache__
+.vscode
 config.cfg
 creds.json
 user_info.csv
