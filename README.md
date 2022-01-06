@@ -3,6 +3,10 @@ A COVID Self Help Chatbot which responds to the user’s COVID related queries f
 
 It has been featured on the official [IIT Kanpur Self-Help Website for COVID](https://sites.google.com/view/iitk-self-help/chatbotiitk?authuser=0). You can try the bot on [Telegram](https://t.me/covid_selfhelp_chatbot). 
 
+## Demo
+
+https://user-images.githubusercontent.com/66573172/148454950-bc778eb2-2930-4ea1-be60-46bce52645cd.mp4
+
 ## Files
 
 1. `bot.py` contains the code for the Telegram Bot API.  
