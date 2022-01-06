@@ -1,7 +1,7 @@
 # covid_selfhelp_chatbot
 A COVID Self Help Chatbot which responds to the user’s COVID related queries from an online database for the official Telegram group for COVID emergencies in IIT Kanpur. 
 
-You can try the bot on [Telegram](https://t.me/covid_selfhelp_chatbot). 
+It has been featured on the official [IIT Kanpur Self-Help Website for COVID](https://sites.google.com/view/iitk-self-help/chatbotiitk?authuser=0). You can try the bot on [Telegram](https://t.me/covid_selfhelp_chatbot). 
 
 ## Files
 
